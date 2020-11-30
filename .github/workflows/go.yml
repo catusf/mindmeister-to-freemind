@@ -6,7 +6,11 @@ on:
   release:
     types: 
         - created
-
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    
 # workflow tasks
 jobs:
   generate:
