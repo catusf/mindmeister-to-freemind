@@ -1,8 +1,14 @@
 name: build
 
+# on events
 on:
-  pull_request:
+  release:
+    types: 
+        - created
   push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   xgo:
